@@ -4,9 +4,9 @@
   "description": "Simple web app for adding, completing, filtering, and deleting personal tasks.",
   "tasks": [
     {
-      "id": "US-001",
+      "id": "FE-001",
       "title": "Create web app structure",
-      "description": "As a developer, I want a clean web app baseline so future stories follow the same structure.",
+      "description": "As a developer, I want a clean web app baseline so future features follow the same structure.",
       "acceptanceCriteria": [
         "Project contains folders for src, components, pages, styles, lib, and tests",
         "App has one main layout and one home page",
@@ -18,7 +18,7 @@
       "notes": ""
     },
     {
-      "id": "US-002",
+      "id": "FE-002",
       "title": "Persist tasks locally",
       "description": "As a user, I want tasks saved locally so I do not lose them after refresh.",
       "acceptanceCriteria": [
@@ -33,7 +33,7 @@
       "notes": ""
     },
     {
-      "id": "US-003",
+      "id": "FE-003",
       "title": "Add a task",
       "description": "As a user, I want to create a task quickly so I can track what I need to do.",
       "acceptanceCriteria": [
@@ -48,7 +48,7 @@
       "notes": ""
     },
     {
-      "id": "US-004",
+      "id": "FE-004",
       "title": "View task list",
       "description": "As a user, I want to see my saved tasks so I can review what is pending.",
       "acceptanceCriteria": [
@@ -63,7 +63,7 @@
       "notes": ""
     },
     {
-      "id": "US-005",
+      "id": "FE-005",
       "title": "Mark a task complete",
       "description": "As a user, I want to mark a task done so I can track progress.",
       "acceptanceCriteria": [
@@ -78,7 +78,7 @@
       "notes": ""
     },
     {
-      "id": "US-006",
+      "id": "FE-006",
       "title": "Delete a task",
       "description": "As a user, I want to remove a task I no longer need so my list stays clean.",
       "acceptanceCriteria": [
@@ -93,7 +93,7 @@
       "notes": ""
     },
     {
-      "id": "US-007",
+      "id": "FE-007",
       "title": "Filter tasks by status",
       "description": "As a user, I want to filter tasks so I can focus on active or completed work.",
       "acceptanceCriteria": [
@@ -108,7 +108,7 @@
       "notes": ""
     },
     {
-      "id": "US-008",
+      "id": "FE-008",
       "title": "Validate quality checks",
       "description": "As a maintainer, I want test coverage and build checks so the template stays stable.",
       "acceptanceCriteria": [

@@ -88,7 +88,7 @@ When modifying UI:
 - support loading, empty, error, and content states where relevant
 - reuse existing design patterns before inventing new ones
 
-If the project includes previews, stories, examples, or playground pages, add or update them when helpful.
+If the project includes previews, examples, demos, or playground pages, add or update them when helpful.
 
 ---
 
@@ -168,13 +168,13 @@ This repo is designed for iterative execution.
 Agents should understand:
 
 - `TASKS.md` is the human-readable plan
-- `prd.json` is the machine-readable story list
-- `ralph_once.sh` executes one story
-- `ralph_loop.sh` executes multiple stories until completion or stop conditions
+- `prd.json` is the machine-readable feature list
+- `ralph_once.sh` executes one feature
+- `ralph_loop.sh` executes multiple features until completion or stop conditions
 
 When creating or updating `prd.json`:
 
-- each task should represent one focused story
+- each task should represent one focused feature
 - tasks should be small enough for one iteration when practical
 - `priority` determines execution order
 - `implemented` is for agent-completed work

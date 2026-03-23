@@ -12,7 +12,7 @@ This repo uses two planning artifacts:
 1. Start from the task brief in `TASKS.md`.
 2. Use the local `prd` skill in [`skills/SKILL.md`](C:\Users\61422\Desktop\OMSCS\projects\ralph_vanilla\skills\SKILL.md).
 3. Use that skill output to generate `prd.json` directly.
-4. Keep one focused task per story in `prd.json`.
+4. Keep one focused task per feature in `prd.json`.
 
 Example with Codex:
 
@@ -40,9 +40,9 @@ Recommended JSON shape:
   "description": "Simple web app for adding, completing, filtering, and deleting personal tasks.",
   "tasks": [
     {
-      "id": "US-001",
+      "id": "FE-001",
       "title": "Create web app structure",
-      "description": "As a developer, I want a clean web app baseline so future stories follow the same structure.",
+      "description": "As a developer, I want a clean web app baseline so future features follow the same structure.",
       "acceptanceCriteria": [
         "Project contains folders for src, components, pages, styles, lib, and tests"
       ],
@@ -59,12 +59,12 @@ Rules:
 
 - `branchPrefix` is used to create one branch per task.
 - `priority` controls which task Ralph picks first.
-- `implemented` is set by Ralph when a story is done.
+- `implemented` is set by Ralph when a feature is done.
 - `accepted` is reserved for human review.
 
 ## Use Ralph Once
 
-`ralph once` runs a single implementation iteration for the highest-priority unfinished story.
+`ralph once` runs a single implementation iteration for the highest-priority unfinished feature.
 
 Linux/macOS or Git Bash:
 
@@ -83,8 +83,8 @@ Copy-Item prd.sample.json prd.json
 What it does:
 
 - reads `prd.json`, `ralph.md`, and `progress.txt`
-- creates or checks out the branch for the next story
-- asks Codex to implement exactly one story
+- creates or checks out the branch for the next feature
+- asks Codex to implement exactly one feature
 - updates `prd.json` and `progress.txt`
 - pushes the branch and opens or reuses a PR
 
@@ -99,7 +99,7 @@ Prerequisites:
 
 ## Use Ralph Loop
 
-`ralph loop` repeats the one-story workflow until all stories are marked implemented or the loop hits its stop conditions.
+`ralph loop` repeats the one-feature workflow until all features are marked implemented or the loop hits its stop conditions.
 
 Linux/macOS or Git Bash:
 
@@ -124,6 +124,6 @@ Current loop limits from [`ralph_loop.sh`](C:\Users\61422\Desktop\OMSCS\projects
 
 1. Write or update `TASKS.md`.
 2. Use Codex with the local `prd` skill to generate `prd.json` using the sample format.
-3. Run `ralph once` for a single story, or `ralph loop` for repeated story execution.
+3. Run `ralph once` for a single feature, or `ralph loop` for repeated feature execution.
 4. Review the PRs Ralph opens.
-5. Mark stories accepted during human review.
+5. Mark features accepted during human review.

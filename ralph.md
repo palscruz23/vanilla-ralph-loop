@@ -7,19 +7,19 @@ You are an autonomous coding agent working on a software project.
 1. Read the PRD at `prd.json` (in the same directory as this file)
 2. Read the progress log at `progress.txt` (check Codebase Patterns section first)
 3. Check you're on the correct branch from PRD `branchName`. If not, check it out or create from main.
-4. Pick the **highest priority** user story where `passes: false`
-5. Implement that single user story
+4. Pick the **highest priority** feature where `passes: false`
+5. Implement that single feature
 6. Run quality checks (e.g., typecheck, lint, test - use whatever your project requires)
 7. Update AGENTS.md files if you discover reusable patterns (see below)
-8. If checks pass, commit ALL changes with message: `feat: [Story ID] - [Story Title]`
-9. Update the PRD to set `passes: true` for the completed story
+8. If checks pass, commit ALL changes with message: `feat: [Feature ID] - [Feature Title]`
+9. Update the PRD to set `passes: true` for the completed feature
 10. Append your progress to `progress.txt`
 
 ## Progress Report Format
 
 APPEND to progress.txt (never replace, always append):
 ```
-## [Date/Time] - [Story ID]
+## [Date/Time] - [Feature ID]
 - What was implemented
 - Files changed
 - **Learnings for future iterations:**
@@ -44,7 +44,7 @@ If you discover a **reusable pattern** that future iterations should know, add i
 - Example: Export types from actions.ts for UI components
 ```
 
-Only add patterns that are **general and reusable**, not story-specific details.
+Only add patterns that are **general and reusable**, not feature-specific details.
 
 ## Update AGENTS.md Files
 
@@ -66,7 +66,7 @@ Before committing, check if any edited files have learnings worth preserving in 
 - "Field names must match the template exactly"
 
 **Do NOT add:**
-- Story-specific implementation details
+- Feature-specific implementation details
 - Temporary debugging notes
 - Information already in progress.txt
 
@@ -81,16 +81,16 @@ Only update AGENTS.md if you have **genuinely reusable knowledge** that would he
 
 ## Stop Condition
 
-After completing a user story, check if ALL stories have `passes: true`.
+After completing a feature, check if ALL features have `passes: true`.
 
 If ALL tasks are complete and passing, reply with:
 <promise>COMPLETE</promise>
 
-If there are still stories with `passes: false`, end your response normally (another iteration will pick up the next story).
+If there are still features with `passes: false`, end your response normally (another iteration will pick up the next feature).
 
 ## Important
 
-- Work on ONE story per iteration
+- Work on ONE feature per iteration
 - Commit frequently
 - Keep CI green
 - Read the Codebase Patterns section in progress.txt before starting

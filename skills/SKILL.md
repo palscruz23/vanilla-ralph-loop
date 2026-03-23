@@ -66,29 +66,29 @@ Brief description of the feature and the problem it solves.
 ### 2. Goals
 Specific, measurable objectives (bullet list).
 
-### 3. User Stories
-Each story needs:
+### 3. Features
+Each feature needs:
 - **Title:** Short descriptive name
 - **Description:** "As a [user], I want [feature] so that [benefit]"
 - **Acceptance Criteria:** Verifiable checklist of what "done" means
 
-Each story should be small enough to implement in one focused session.
+Each feature should be small enough to implement in one focused session.
 
 **Format:**
 ```markdown
-### US-001: [Title]
+### FE-001: [Title]
 **Description:** As a [user], I want [feature] so that [benefit].
 
 **Acceptance Criteria:**
 - [ ] Specific verifiable criterion
 - [ ] Another criterion
 - [ ] Typecheck/lint passes
-- [ ] **[UI stories only]** Verify in browser using dev-browser skill
+- [ ] **[UI features only]** Verify in browser using dev-browser skill
 ```
 
 **Important:** 
 - Acceptance criteria must be verifiable, not vague. "Works correctly" is bad. "Button shows confirmation dialog before deleting" is good.
-- **For any story with UI changes:** Always include "Verify in browser using dev-browser skill" as acceptance criteria. This ensures visual verification of frontend work.
+- **For any feature with UI changes:** Always include "Verify in browser using dev-browser skill" as acceptance criteria. This ensures visual verification of frontend work.
 
 ### 4. Functional Requirements
 Numbered list of specific functionalities:
@@ -156,9 +156,9 @@ Add priority levels to tasks so users can focus on what matters most. Tasks can 
 - Enable filtering and sorting by priority
 - Default new tasks to medium priority
 
-## User Stories
+## Features
 
-### US-001: Add priority field to database
+### FE-001: Add priority field to database
 **Description:** As a developer, I need to store task priority so it persists across sessions.
 
 **Acceptance Criteria:**
@@ -166,7 +166,7 @@ Add priority levels to tasks so users can focus on what matters most. Tasks can 
 - [ ] Generate and run migration successfully
 - [ ] Typecheck passes
 
-### US-002: Display priority indicator on task cards
+### FE-002: Display priority indicator on task cards
 **Description:** As a user, I want to see task priority at a glance so I know what needs attention first.
 
 **Acceptance Criteria:**
@@ -175,7 +175,7 @@ Add priority levels to tasks so users can focus on what matters most. Tasks can 
 - [ ] Typecheck passes
 - [ ] Verify in browser using dev-browser skill
 
-### US-003: Add priority selector to task edit
+### FE-003: Add priority selector to task edit
 **Description:** As a user, I want to change a task's priority when editing it.
 
 **Acceptance Criteria:**
@@ -185,7 +185,7 @@ Add priority levels to tasks so users can focus on what matters most. Tasks can 
 - [ ] Typecheck passes
 - [ ] Verify in browser using dev-browser skill
 
-### US-004: Filter tasks by priority
+### FE-004: Filter tasks by priority
 **Description:** As a user, I want to filter the task list to see only high-priority items when I'm focused.
 
 **Acceptance Criteria:**
@@ -235,7 +235,7 @@ Before saving the PRD:
 
 - [ ] Asked clarifying questions with lettered options
 - [ ] Incorporated user's answers
-- [ ] User stories are small and specific
+- [ ] Features are small and specific
 - [ ] Functional requirements are numbered and unambiguous
 - [ ] Non-goals section defines clear boundaries
 - [ ] Saved to `tasks/prd-[feature-name].md`
