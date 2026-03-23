@@ -11,25 +11,8 @@ This repo uses two planning artifacts:
 
 1. Start from the task brief in `TASKS.md`.
 2. Use the local `prd` skill in [`skills/SKILL.md`](C:\Users\61422\Desktop\OMSCS\projects\ralph_vanilla\skills\SKILL.md).
-3. Use that skill output to generate `prd.json` directly.
+3. Use Codex with that skill to generate `prd.json` directly.
 4. Keep one focused task per feature in `prd.json`.
-
-Example with Codex:
-
-```text
-Read TASKS.md and use the local `prd` skill to generate `prd.json` directly.
-Do not create a markdown PRD file.
-Keep tasks small and ordered by priority.
-Use `prd.sample.json` as the output shape.
-```
-
-If you are running Codex from this repo, a typical flow is:
-
-```bash
-codex
-# then ask Codex:
-# "Read TASKS.md and generate prd.json using the local prd skill and prd.sample.json as the schema."
-```
 
 Recommended JSON shape:
 
