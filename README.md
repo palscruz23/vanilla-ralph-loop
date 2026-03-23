@@ -14,6 +14,23 @@ This repo uses two planning artifacts:
 3. Use that skill output to generate `prd.json` directly.
 4. Keep one focused task per story in `prd.json`.
 
+Example with Codex:
+
+```text
+Read TASKS.md and use the local `prd` skill to generate `prd.json` directly.
+Do not create a markdown PRD file.
+Keep tasks small and ordered by priority.
+Use `prd.sample.json` as the output shape.
+```
+
+If you are running Codex from this repo, a typical flow is:
+
+```bash
+codex
+# then ask Codex:
+# "Read TASKS.md and generate prd.json using the local prd skill and prd.sample.json as the schema."
+```
+
 Recommended JSON shape:
 
 ```json
@@ -106,7 +123,7 @@ Current loop limits from [`ralph_loop.sh`](C:\Users\61422\Desktop\OMSCS\projects
 ## Practical Flow
 
 1. Write or update `TASKS.md`.
-2. Use the skill to generate `prd.json` using the sample format.
+2. Use Codex with the local `prd` skill to generate `prd.json` using the sample format.
 3. Run `ralph once` for a single story, or `ralph loop` for repeated story execution.
 4. Review the PRs Ralph opens.
 5. Mark stories accepted during human review.
