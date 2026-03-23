@@ -1,0 +1,125 @@
+{
+  "project": "Focus Flow",
+  "branchPrefix": "review/focus-flow",
+  "description": "Simple web app for adding, completing, filtering, and deleting personal tasks.",
+  "tasks": [
+    {
+      "id": "US-001",
+      "title": "Create web app structure",
+      "description": "As a developer, I want a clean web app baseline so future stories follow the same structure.",
+      "acceptanceCriteria": [
+        "Project contains folders for src, components, pages, styles, lib, and tests",
+        "App has one main layout and one home page",
+        "Project build command runs successfully"
+      ],
+      "priority": 1,
+      "implemented": false,
+      "accepted": false,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "Persist tasks locally",
+      "description": "As a user, I want tasks saved locally so I do not lose them after refresh.",
+      "acceptanceCriteria": [
+        "Task data includes title, status, and optional due date",
+        "Storage logic is isolated from presentational UI components",
+        "Tasks are restored after a page refresh",
+        "Build and tests pass"
+      ],
+      "priority": 2,
+      "implemented": false,
+      "accepted": false,
+      "notes": ""
+    },
+    {
+      "id": "US-003",
+      "title": "Add a task",
+      "description": "As a user, I want to create a task quickly so I can track what I need to do.",
+      "acceptanceCriteria": [
+        "Add-task form includes title and optional due date",
+        "Title is required before save",
+        "Saving a valid task updates the visible list immediately",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 3,
+      "implemented": false,
+      "accepted": false,
+      "notes": ""
+    },
+    {
+      "id": "US-004",
+      "title": "View task list",
+      "description": "As a user, I want to see my saved tasks so I can review what is pending.",
+      "acceptanceCriteria": [
+        "Tasks display in a readable list on the home page",
+        "Empty state appears when there are no tasks",
+        "Completed tasks are visually distinct from active tasks",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 4,
+      "implemented": false,
+      "accepted": false,
+      "notes": ""
+    },
+    {
+      "id": "US-005",
+      "title": "Mark a task complete",
+      "description": "As a user, I want to mark a task done so I can track progress.",
+      "acceptanceCriteria": [
+        "Each task can be toggled between active and completed",
+        "Completed state persists after refresh",
+        "Task styling updates to reflect completion state",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 5,
+      "implemented": false,
+      "accepted": false,
+      "notes": ""
+    },
+    {
+      "id": "US-006",
+      "title": "Delete a task",
+      "description": "As a user, I want to remove a task I no longer need so my list stays clean.",
+      "acceptanceCriteria": [
+        "Each task can be deleted from the list",
+        "Deleted tasks are removed from storage and UI",
+        "Deleting one task does not affect others",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 6,
+      "implemented": false,
+      "accepted": false,
+      "notes": ""
+    },
+    {
+      "id": "US-007",
+      "title": "Filter tasks by status",
+      "description": "As a user, I want to filter tasks so I can focus on active or completed work.",
+      "acceptanceCriteria": [
+        "Filters exist for All, Active, and Completed",
+        "Filtered results update immediately when the filter changes",
+        "Task count matches the currently visible items or clearly states what is being counted",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 7,
+      "implemented": false,
+      "accepted": false,
+      "notes": ""
+    },
+    {
+      "id": "US-008",
+      "title": "Validate quality checks",
+      "description": "As a maintainer, I want test coverage and build checks so the template stays stable.",
+      "acceptanceCriteria": [
+        "Tests cover add, complete, delete, and filter behavior",
+        "Build command passes",
+        "Test command passes"
+      ],
+      "priority": 8,
+      "implemented": false,
+      "accepted": false,
+      "notes": ""
+    }
+  ]
+}
