@@ -47,7 +47,7 @@ Rules:
 
 ## Use Ralph Once
 
-`ralph once` runs a single implementation iteration for the highest-priority unfinished feature.
+`ralph once` runs a single implementation iteration for the highest-priority unfinished feature using Codex.
 
 Linux/macOS or Git Bash:
 
@@ -82,7 +82,7 @@ Prerequisites:
 
 ## Use Ralph Loop
 
-`ralph loop` repeats the one-feature workflow until all features are marked implemented or the loop hits its stop conditions.
+`ralph loop` repeats the one-feature workflow using Codex until all features are marked implemented or the loop hits its stop conditions.
 
 Linux/macOS or Git Bash:
 
